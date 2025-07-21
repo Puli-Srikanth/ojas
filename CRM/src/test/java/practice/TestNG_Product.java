@@ -10,7 +10,7 @@ import ObjectRepository.ProductPage;
 
 public class TestNG_Product extends BaseClass{
 	
-	@Test
+	@Test(groups = "smoke")
 	public void createProductTest() throws Throwable {
 		
 		String productname = eutil.getDataFromExcelfile("sheet4", 1, 2);
@@ -38,7 +38,7 @@ public class TestNG_Product extends BaseClass{
 		
 	}
 
-	@Test
+	@Test(groups = "regression")
 	public void createProductwithCategory() throws Throwable {
 		
 		String productname = eutil.getDataFromExcelfile("sheet4", 4, 2);

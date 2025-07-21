@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.TestNg_01_OrgTest">
+      <class name="practice.HandleCalender">
         <methods>
-          <include name="configAS"/>
-          <include name="configAC"/>
-          <include name="configBS"/>
-          <include name="configBC"/>
-          <include name="configAM"/>
-          <include name="configBM"/>
-          <include name="createOrgTest"/>
+          <include name="goibiboTest"/>
         </methods>
-      </class> <!-- practice.TestNg_01_OrgTest -->
+      </class> <!-- practice.HandleCalender -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

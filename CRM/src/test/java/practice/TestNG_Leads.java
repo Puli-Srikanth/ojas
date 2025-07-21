@@ -10,7 +10,7 @@ import ObjectRepository.LeadsPage;
 
 public class TestNG_Leads extends BaseClass{
 
-	@Test
+	@Test(groups = "smoke")
 	public void createLeadsTest() throws Throwable {
 		
 		String leadname = eutil.getDataFromExcelfile("sheet3", 1, 2)+ jutil.getRandomNumber() ;
@@ -39,7 +39,7 @@ public class TestNG_Leads extends BaseClass{
 		hp.getHomeIcon().click();
 	}
 	
-	@Test
+	@Test(groups = "regression")
 	public void createLeadswithPhoneNumber() throws Throwable {
 		
 		String leadname = eutil.getDataFromExcelfile("sheet3", 4, 2)+ jutil.getRandomNumber() ;
